@@ -1,0 +1,54 @@
+<!--********************************-->
+<!---------------MYCODE--------------->
+<!--********************************-->
+<ion-app>
+  <body>
+    <ion-content class="Whole">
+
+      <!--Grid to store rows and columns-->
+      <ion-grid class="accountGrid">
+        <ion-row>
+          <ion-col>
+
+            <!--LOGO- import img of logo-->
+            <ion-card-content class="logo">
+              <img src="assets/logo.png" alt="logo">
+            </ion-card-content>
+
+            <!--Form itself-->
+            <ion-card-content>
+
+              <!--Input Items-->
+              <ion-input class="form" [(ngModel)]="username" placeholder="username"></ion-input>
+              <ion-input class="form" [(ngModel)]="email" placeholder="email"></ion-input>
+              <ion-input class="form" [(ngModel)]="password" placeholder="password"></ion-input>
+              <ion-input class="form" [(ngModel)]="confirmPassword" placeholder="confirm password"></ion-input>
+
+              <!--accountBtn-->
+              <section class="accountBtn">
+                <ion-fab>
+                  <ion-fab-button (click)="accountCreatedPress();" style="width:70px ; height:70px; font-weight: 10px;">
+                     join<br/>in
+                  </ion-fab-button>
+                </ion-fab>
+              </section>
+
+            </ion-card-content>
+
+            <!--Below the form-->
+            <ion-row>
+              <ion-col class="backLogin">
+                <ion-text (click)="backLogin();">
+                  <h6>back to Login</h6>
+                </ion-text>
+              </ion-col>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-content>
+  </body>
+</ion-app>
+<!--********************************-->
+<!--------------ENDMYCODE------------->
+<!--********************************-->

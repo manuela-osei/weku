@@ -1,0 +1,90 @@
+<!--********************************-->
+<!---------------MYCODE--------------->
+<!--********************************-->
+<body>
+  <ion-app>
+    <!-- Main content page -->
+    <ion-content>
+      <div style=" margin-top: 20%;">
+        <ion-text style=" font-size:medium; ">
+          <b>
+            Join or Create a Tree to continue:
+          </b>
+        </ion-text>
+      </div>
+
+      <!-- Form to add tree -->
+
+        <!-- JOIN TREE -->
+        <ion-card style=" padding: 2% 2% 2% 2%; text-align: center;">
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <!-- Tree selection -->
+                <ion-text style=" font-size: x-large;">Join a tree</ion-text>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                <!-- searchbar for trees -->
+                <ion-searchbar interface="popover" (ngModelChange)="searchFilter();" [(ngModel)]="selectedTreeId"
+                  id="selectedTreeId" animation></ion-searchbar>
+                  
+                <!-- Insert Options from list in tree -->
+                <!-- <ion-select-option *ngFor="let tree of trees" value="{{tree.id}}">{{tree.id}}</ion-select-option>-->
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                <!-- Join button -->
+                <ion-fab-button id="btn-confirm" (click)="joinTree();">
+                  <b>Join</b>
+                </ion-fab-button>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+      </ion-card>
+
+        <!--CREATE TREE -->
+        <ion-card style=" padding: 2% 2% 2% 2%; text-align: center;">
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <!-- creating tree -->
+                <ion-text style=" font-size: x-large;">Create a tree</ion-text>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                <!-- inputs -->
+                <ion-item>
+                  <ion-label position="floating"> Name of Tree </ion-label>
+                  <ion-input [(ngModel)]="inputName"> </ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label position="floating"> Create a Tree Id</ion-label>
+                  <ion-input [(ngModel)]="inputId"> </ion-input>
+                </ion-item>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                <!-- add button -->
+                <ion-fab-button id="btn-confirm" (click)="createNewTree();">
+                   <b>
+                    Create
+                   </b>
+                </ion-fab-button>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card>
+      <ion-text (click)="back();">
+        <h6>back</h6>
+      </ion-text>
+    </ion-content>
+  </ion-app>
+</body>
+<!--********************************-->
+<!---------------ENDMYCODE------------>
+<!--********************************-->

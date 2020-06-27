@@ -1,0 +1,32 @@
+///////////////////////
+///////CSS/STYLING/////
+///////////////////////
+body{
+    font-family: monospace;
+    --ion-font-family: monospace;
+}
+
+ion-toolbar{
+    padding-top: 3%;
+    height: 8%;
+}
+
+ion-title{
+   // margin-top: 3%;
+    font-size: x-large;
+ }
+
+ .list{
+     height: 100%;
+ }
+ ion-item{
+     width: 95%;
+ }
+
+ ion-label{
+     margin-top: 10%;
+     margin-bottom: 10%;
+     text-align: center;
+
+ }
+ 

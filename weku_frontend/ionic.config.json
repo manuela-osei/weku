@@ -1,0 +1,8 @@
+{
+  "name": "weku",
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,117 @@
+<!--********************************-->
+<!---------------MYCODE--------------->
+<!--********************************-->
+<body>
+  <ion-content>
+    <!-- coverpage -->
+    <div class="coverPage">
+      <img [src]="cover" style=" width: 100%; height: 100%;" type="">
+      <ion-icon class="coverIcon" name="camera-sharp" (click)="pickImages()"></ion-icon>
+    </div>
+
+    <!-- profile -->
+    <div class="profilePage">
+      <ion-avatar (click)="pickProfImages()" class="dp">
+        <img [src] = "dp" type="" />
+      </ion-avatar>
+    </div>
+
+    <!-- settings button -->
+    <div>
+      <ion-icon class="settings" name="settings-sharp" (click)="settings()"></ion-icon>
+    </div>
+
+    <!-- slides  -->
+    <ion-slides>
+
+      <ion-slide>
+        <ion-card class="relatives">
+          <h2>Relatives</h2>
+          <ion-row>
+            <ion-col>
+              <!--user. parent, user.siblings dp -->
+              <!-- member.users.dp -->
+
+
+              <label>
+                Mother: {{mother?.username}}
+                <br><br>
+              </label>
+
+              <label>
+                Father: {{father?.username}}
+                <br><br>
+              </label>
+
+              <label>
+                Wife: {{wife?.username}}
+                <br><br>
+              </label>
+
+              <label>
+                Husband: {{husband?.username}}
+                <br><br>
+              </label>
+
+              <label *ngFor="let child of children">
+                Child: {{child?.username}}
+                <br><br>
+              </label>
+
+              <label *ngFor="let sibling of siblings">
+                Sibling: {{sibling?.username}}
+                <br><br>
+              </label>
+
+            </ion-col>
+          </ion-row>
+        </ion-card>
+      </ion-slide>
+
+      <ion-slide>
+        <ion-card class="profileInfo">
+          <!-- update profile -->
+          <ion-icon style=" position: fixed; margin-top: 6%; margin-left: 80%; font-size: x-large;"
+            (click)="fillProfile()" name="add-circle-outline">
+          </ion-icon>
+          <h2 style="text-align: center;">Profile details </h2>
+          <!-- list -->
+          <ion-list>
+            <!-- list all data.user -->
+            <label style="font-size: medium;">
+              <br>
+              Name: <b> {{  name}} </b>
+              <br><br>
+
+              Family Name: <b> {{  lastName}} </b>
+              <br><br>
+
+              Gender: <b> {{  gender}} </b>
+              <br><br>
+
+              Date Of Birth: <b> {{  dateOfBirth}} </b>
+              <br><br>
+
+              Place Of Birth: <b> {{  placeOfBirth}} </b>
+              <br><br>
+
+              Country Of Origin: <b> {{  countryOfOrigin}} </b>
+              <br><br>
+
+              Current Nationality: <b> {{  currentNationality}} </b>
+              <br><br>
+
+            </label>
+
+            <!-- <ion-input [(ngModel)]="name"></ion-input> -->
+          </ion-list>
+        </ion-card>
+      </ion-slide>
+    </ion-slides>
+
+    <!-- all that is involved in timeline of current user -->
+  </ion-content>
+</body>
+<!--********************************-->
+<!---------------ENDMYCODE------------>
+<!--********************************-->

@@ -1,0 +1,62 @@
+///////////////////////
+///////CSS/STYLING/////
+///////////////////////
+
+body{
+    --ion-background-color: #BB3934;
+    --ion-color-primary-contrast: #BB3934;
+    --ion-color-primary: #ffffff;
+    --ion-text-color: white;
+}
+
+//whole page
+.Whole
+{
+    --background:#1C1C1C;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Andale Mono';
+    align-items: center;
+   
+}
+
+//form header
+.formHeader{
+    font-family: 'Andale Mono';//fonttype
+    font-size: 100%;
+    padding-top: 20%;
+    color:#BB3934;
+}
+
+//ion-item/form-background
+ion-item{
+    width: 90%;
+    margin-left: 3%;
+    --background: #1C1C1C;
+    color: white;
+}
+
+//button to the next page
+.nextBtn{
+    margin-top: 3%;
+    margin-right: 20%;
+    margin-bottom: 20%;
+    --ion-text-color: #BB3934;
+    text-align: center;
+}
+
+.hydrated {
+    font-family: 'Andale Mono';//fonttype
+}
+
+//bottom line 
+//line to back up
+.backAccount{
+    color: white;
+    text-align: center;
+}
+h6{
+    font-size: small;
+}
+

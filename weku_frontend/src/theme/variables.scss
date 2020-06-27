@@ -1,0 +1,123 @@
+// Ionic Variables and Theming. For more info, please see:
+// http://ionicframework.com/docs/theming/
+
+/** Ionic CSS Variables **/
+//--MakeLotOfChangesToSuitYourColourTheme-->
+
+:root {
+    /** primary **/
+    --ion-color-primary: #BB3934;
+    --ion-color-primary-rgb: 255,255,255;
+    --ion-color-primary-contrast: #000000;
+    --ion-color-primary-contrast-rgb: 0,0,0;
+    --ion-color-primary-shade: rgb(250, 250, 250);
+    --ion-color-primary-tint: #BB3934;
+
+    ion-content{
+      --background: #EAC3C2;
+    }
+
+    ion-toolbar{
+      --background: #F9E4E4;
+      --color: #000000;
+    }
+
+    ion-list{
+      --ion-item-background: #F9E4E4;
+      --ion-item-color: #000000;
+
+        ion-list-header{
+          --color: #000000;
+        }
+      
+    }
+    
+    ion-card{
+      --background: #F9E4E4;
+      --color: #000000;
+      --ion-card-title{
+        --color:#000000;
+      }
+    }
+
+    ion-tab-bar{
+      --background:#EAC3C2;
+      --color: #000000;
+    }
+
+    ion-label{
+      --background: rgb(255, 255, 255);
+      --color: #000000;
+    }
+
+    ion-item{
+      --background: #F9E4E4;
+      --color: #000000;
+    }
+  }
+
+
+///////dark mode
+.dark-theme{
+
+      /** primary **/
+    --ion-color-primary: #BB3934;
+    --ion-color-primary-rgb: 255,255,255;
+    --ion-color-primary-contrast: #ffffff;
+    --ion-color-primary-contrast-rgb: 0,0,0;
+    --ion-color-primary-shade: rgb(250, 250, 250);
+    --ion-color-primary-tint: #BB3934;
+
+    ion-content{
+      --background: #1C1C1C;
+      --color: #ffffff;
+    }
+
+    ion-toolbar{
+      --background: #2F2E2E;
+      --color: #ffffff;
+    }
+
+    ion-list{
+      --ion-item-background: #2F2E2E;
+      --ion-item-color: #ffffff;
+
+      ion-list-header{
+        --color: #ffffff;
+      }
+
+    }
+
+    ion-card{
+      --background: #2F2E2E;
+      --color: #ffffff;
+      ion-card-title{
+        --color:#ffffff;
+      }
+    }
+
+    ion-text{
+      --color: #ffffff;
+    }
+
+    ion-tab-bar{
+      --background: #1C1C1C;
+      --color: #ffffff;
+    }
+
+    ion-label{
+      --background: #2F2E2E;
+      --color: #ffffff;
+    }
+
+    ion-item{
+      --background: #2F2E2E;
+      --color: #ffffff;
+    }
+
+    ion-searchbar{
+      --background: #2F2E2E;
+      --color: #ffffff;
+    }
+ 
+}  

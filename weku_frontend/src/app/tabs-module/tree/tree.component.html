@@ -1,0 +1,42 @@
+<!--********************************-->
+<!---------------MYCODE--------------->
+<!--********************************-->
+<body>
+  <ion-content>
+    <!--Toolbar above the page-->
+    <ion-toolbar style="padding-top: 4%; height: 8%;">
+      <div>
+        <ion-title margin-horizontal text-center>WEKU</ion-title>
+      </div>
+    </ion-toolbar>
+
+    <!--Content-->
+    <ion-content class="ion-padding">
+
+      <!-- button to add and remove -->
+      <ion-fab horizontal="end" vertical="top" slot="fixed" style="position: fixed; margin-top: 60px;">
+        <ion-fab-button>
+          <ion-icon name="add"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-list side="start">
+          <ion-fab-button>
+            <ion-icon (click)="pressAdd();" name="add"></ion-icon>
+          </ion-fab-button>
+          <ion-fab-button color="light">
+            <ion-icon (click)="pressRemove();" name="remove-sharp"></ion-icon>
+          </ion-fab-button>
+        </ion-fab-list>
+      </ion-fab>
+
+      <!-- <div id="sample"> -->
+      <div id="myDiagramDiv" style="background-color: rgb(255, 245, 245);  width:100%; height:650px;">
+      </div>
+      <!-- </div> -->
+    </ion-content>
+  </ion-content>
+</body>
+<!--********************************-->
+<!------------ENDMYCODE--------------->
+<!--********************************-->
+
+

@@ -1,0 +1,85 @@
+<!--********************************-->
+<!---------------MYCODE--------------->
+<!--********************************-->
+<ion-app>
+  <!-- body -->
+
+  <body>
+    <ion-content class="Whole">
+      <!--Grid to store rows and columns-->
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <!--Heading-->
+            <ion-card-header>
+              <ion-card-title class="formHeader">Fill in your profile</ion-card-title>
+            </ion-card-header>
+            <!--Form itself-->
+            <ion-item>
+              <ion-label position="floating">gender</ion-label>
+              <ion-select [(ngModel)]="gender">
+                <ion-select-option value="female">female</ion-select-option>
+                <ion-select-option value="male">male</ion-select-option>
+                <ion-select-option value="other">other</ion-select-option>
+              </ion-select>
+            </ion-item>
+            <!-- name -->
+            <ion-item>
+              <ion-label position="floating">first name</ion-label>
+              <ion-input [(ngModel)]="name"></ion-input>
+            </ion-item>
+            <!-- family name -->
+            <ion-item>
+              <ion-label position="floating">Family name</ion-label>
+              <ion-input [(ngModel)]="lastName"></ion-input>
+            </ion-item>
+            <!-- date of birth -->
+            <ion-item>
+              <ion-label position="floating">date of birth</ion-label>
+              <ion-datetime [(ngModel)]="dateOfBirth" displayFormat="DD MM YYYY"></ion-datetime>
+            </ion-item>
+            <!-- place of birth -->
+            <ion-item>
+              <ion-label position="floating">place of birth</ion-label>
+              <ion-input [(ngModel)]="placeOfBirth"></ion-input>
+            </ion-item>
+            <!-- country of origin -->
+            <ion-item>
+              <ion-label position="floating">country of origin</ion-label>
+              <ion-input [(ngModel)]="countryOfOrigin"></ion-input>
+            </ion-item>
+            <!-- current nationality -->
+            <ion-item>
+              <ion-label position="floating">current nationality</ion-label>
+              <ion-input [(ngModel)]="currentNationality"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+
+        <!--belowBTN&back-->
+        <ion-row>
+          <ion-col>
+            <section class="nextBtn">
+              <ion-fab>
+                <ion-fab-button style="width:65px ; height:65px; font-weight: 10px;">
+                  <ion-button (click)="next();">Save</ion-button>
+                </ion-fab-button>
+              </ion-fab>
+            </section>
+
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="backAccount">
+            <ion-text (click)="skip();">
+              <h6>Skip</h6>
+            </ion-text>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-content>
+  </body>
+</ion-app>
+<!--********************************-->
+<!--------------ENDMYCODE------------->
+<!--********************************-->

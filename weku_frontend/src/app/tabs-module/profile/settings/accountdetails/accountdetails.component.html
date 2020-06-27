@@ -1,0 +1,68 @@
+<!--********************************-->
+<!---------------MYCODE--------------->
+<!--********************************-->
+<ion-app>
+
+  <body>
+    <ion-content>
+      <ion-card>
+        <!-- header contains back button and tittle-->
+        <ion-card-header>
+          <ion-buttons>
+            <ion-back-button defaultHref="/settings"></ion-back-button>
+          </ion-buttons>
+          <ion-title> Account details</ion-title>
+        </ion-card-header>
+
+        <!-- change passcode or email -->
+        <ion-card-content>
+          <label>Update account details:</label>
+          <ion-item>
+            <ion-label position="floating">Email</ion-label>
+            <ion-input [(ngModel)]="email"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Password</ion-label>
+            <ion-input [(ngModel)]="password"></ion-input>
+          </ion-item>
+
+          <!-- view profile info -->
+          <div style="text-align: center;">
+            <h2 style=" margin-top: 5%; text-align: center;"> <br><br> <b>Profile details</b> </h2>
+            <label style="text-align: center;"> Changes on this section can be done in the Profile </label>
+            <ion-list>
+              <!-- list all data.user -->
+              <label style="font-size: medium; text-align: center;">
+                <br>
+                Name: <b> {{ name}} </b>
+                <br><br>
+
+                Family Name: <b> {{ lastName}} </b>
+                <br><br>
+
+                Gender: <b> {{ gender}} </b>
+                <br><br>
+
+                Date Of Birth: <b> {{ dateOfBirth}} </b>
+                <br><br>
+
+                Place Of Birth: <b> {{ placeOfBirth}} </b>
+                <br><br>
+
+                Country Of Origin: <b> {{ countryOfOrigin}} </b>
+                <br><br>
+
+                Current Nationality: <b> {{ currentNationality}} </b>
+                <br><br>
+
+              </label>
+            </ion-list>
+          </div>
+        </ion-card-content>
+      </ion-card>
+    </ion-content>
+  </body>
+</ion-app>
+<!--********************************-->
+<!------------ENDMYCODE--------------->
+<!--********************************-->

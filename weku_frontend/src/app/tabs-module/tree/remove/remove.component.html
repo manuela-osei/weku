@@ -1,0 +1,72 @@
+<!--********************************-->
+<!---------------MYCODE--------------->
+<!--********************************-->
+<body>
+  <ion-app>
+      <ion-toolbar>
+        <!-- back button -->
+        <ion-buttons slot="start">
+          <ion-back-button defaultHref="/tabs/tree"></ion-back-button>
+        </ion-buttons>
+        <!-- title -->
+        <ion-title>  Add member</ion-title>
+      </ion-toolbar>
+
+    <!-- content -->
+    <ion-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col size-md="6" offset-md="3">
+            <ion-card>
+              <!-- title of card -->
+              <ion-card-header>
+                <ion-card-title> NEW MEMBER</ion-card-title>
+              </ion-card-header>
+              <ion-card-content>
+
+                <!-- Member selection -->
+                <!-- <ion-item>
+                  <ion-label position="floating"> Select a member </ion-label> -->
+                  <!-- selection method set -->
+                  <!-- <ion-select interface="popover" ([ngModel])="selectedUserID" id="selectedUserID"> -->
+                    <!-- Insert Options from list in tree -->
+                    <!-- <ion-select-option *ngFor="let user of users" value="{{user.id}}">{{user.username}}</ion-select-option>
+                  </ion-select>
+                </ion-item> -->
+
+                <!-- Relation Selection -->
+                <!-- <ion-item>
+                  <ion-label position="floating"> Relation </ion-label>
+                    <ion-select interface="action-sheet" ([ngModel])="selectedRelationship" id="selectedRelationship">
+                      <ion-select-option value="mother">mother</ion-select-option>
+                      <ion-select-option value="father">father</ion-select-option>
+                      <ion-select-option value="brother">brother</ion-select-option>
+                      <ion-select-option value="sister">sister</ion-select-option>
+                      <ion-select-option value="wife">wife</ion-select-option>
+                      <ion-select-option value="husband">husband</ion-select-option>
+                    </ion-select>
+                </ion-item> -->
+                <!-- Buttons -->
+                <!-- <div margin-vertical text-right> -->
+                  <!-- add button -->
+                  <!-- <ion-button id="btn-confirm" (click)="removeMember(selectedRelationship, selectedUserID);">
+                    <ion-icon slot="start" name="add"></ion-icon> Add
+                  </ion-button>
+                   -->
+                  <!-- cancel or clear button -->
+                  <!-- <ion-button fill="outline" color="danger" id="btn-cancel" (click)="close();">
+                    <ion-icon slot="start" name="close"></ion-icon> Clear 
+                  </ion-button>
+                </div> -->
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-content>
+  </ion-app>
+</body>
+<!--********************************-->
+<!------------ENDMYCODE--------------->
+<!--********************************-->
+

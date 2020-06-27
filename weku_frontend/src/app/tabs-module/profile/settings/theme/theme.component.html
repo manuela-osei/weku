@@ -1,0 +1,35 @@
+<!--********************************-->
+<!---------------MYCODE--------------->
+<!--********************************-->
+  <ion-content>
+    <!-- card  -->
+    <!-- header with the back button and the page title -->
+    <ion-card-header style="margin-top: 10%;">
+      <ion-buttons>
+        <ion-back-button defaultHref="/settings"></ion-back-button>
+      </ion-buttons>
+      <ion-title style="font-weight: 600;"> Theme Colour</ion-title>
+    </ion-card-header>
+  
+    <!-- Buttons to changing the themes -->
+    <ion-card style=" margin-top: 10%; margin-left: 20%; margin-right: 20%;">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-button (click)="enableDark()" style="margin-left: 0%;">
+              <ion-icon name="moon"></ion-icon> <b>Dark </b>
+            </ion-button>
+          </ion-col>
+          <ion-col>
+            <ion-button (click)="enableLight()" style="margin-left: -10%;">
+              <ion-icon name="sunny"></ion-icon> <b>Light</b>
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
+  </ion-content>
+<!--********************************-->
+<!------------ENDMYCODE--------------->
+<!--********************************-->
+ 

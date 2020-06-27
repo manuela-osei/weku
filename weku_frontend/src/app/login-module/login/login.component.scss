@@ -1,0 +1,125 @@
+
+///////////////////////
+///////CSS/STYLING/////
+///////////////////////
+
+// .overlay {
+//     position: fixed;
+//     top: 0;
+//     right: 0;
+//     bottom: 0;
+//     left: 0;
+//     z-index: 500;
+//     width:100%;
+//     background-color: #BB3934;
+//   }
+  
+  .inner {
+    background-color: #BB3934;
+    height:100%;
+    width:100%;
+    animation: pulse 1s linear forwards;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img{
+        height: 350px;
+        width: 350px;
+        position: absolute;
+    }
+}
+
+//body-Page font is not working
+body
+{
+    --ion-background-color: #BB3934;
+    --ion-color-primary-contrast: #BB3934;
+    --ion-color-primary: #ffffff;
+}
+
+//content
+.Whole
+{
+    --background: #BB3934;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Andale Mono';
+    align-items: center;
+   
+}
+
+//loginPageGrid
+.loginGrid
+{
+    padding-top: 100px;//spaceOnTopOfForm
+    width: 100%;
+}
+
+//logo
+.logo{
+    margin-left: 7%;
+    width:80% 
+}
+
+//inputBoxes
+//find out why they are underlined when activated?
+.form
+{
+    font-size: 20px;
+    margin-left: 2%;
+    text-align: center;//center text
+    color: white; //white text
+    font-family: 'Andale Mono' //fonttype
+}
+
+//Not actual sure where this reference is from
+//i explored some changes on browser's console 
+//and found out this helped to change the font
+//in the input box both android & ios
+//.sc-ion-input-md-h {
+   // font-family: 'Andale Mono';//fonttype
+//}
+//.sc-ion-input-ios-h {
+    //font-family: 'Andale Mono';
+//}
+
+//loginButton 
+.loginBtn
+{
+    margin-top: 30px;
+    margin-right: 20%;
+    margin-bottom: 25%;
+    --ion-text-color: #BB3934;
+    text-align: center; 
+}
+
+.hydrated {
+    font-family: 'Andale Mono';
+}
+
+//BottomLine
+.createAccount
+{
+    text-align: center;
+    font-family: 'Andale Mono';
+    margin-left: 5%;
+    margin-right: -9%;
+}
+.forgotPassword
+{
+    text-align: left;
+    font-family: 'Andale Mono';
+}
+
+//h tags for bottom line
+h5 {
+    color: white;
+    margin-left: 7%;
+}
+
+h6 {
+    color: white;
+    font-size: 14px;
+}

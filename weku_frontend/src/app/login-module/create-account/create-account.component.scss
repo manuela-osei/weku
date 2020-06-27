@@ -1,0 +1,71 @@
+///////////////////////
+///////CSS/STYLING/////
+///////////////////////
+
+
+//body-Page font is not working
+body
+{
+    --ion-background-color: #BB3934;
+    --ion-color-primary-contrast: #BB3934;
+    --ion-color-primary: #ffffff;
+}
+
+//page whole
+.Whole{
+    --background: #BB3934;
+    font-family: 'Andale Mono';
+    padding-top: 200px;
+    align-items: center;
+}
+
+//loginPageGrid
+.accountGrid{
+    padding-top: 20px;//spaceOnTopOfForm
+    width: 350px;
+}
+
+//logo
+.logo{
+    margin-left: 60px;
+    width: 200px;
+}
+
+//form 
+.form{
+    margin-top: 20px;//spacing in-between text boxes
+    text-align: center;//center text
+    color: white; //white text
+    font-weight: bold; //bold text
+    font-family: 'Andale Mono';//fonttype
+}
+
+//input account btn
+.accountBtn{
+    margin-top: 30px;
+    margin-right: 23%;
+    margin-bottom: 25%;
+    text-align: center;
+    --ion-text-color: #BB3934;
+}
+
+.hydrated {
+    font-family: 'Andale Mono';//fonttype
+}
+
+//Bottom Line
+.backLogin{
+    margin-top: 20px;
+    text-align: center; 
+}
+
+//h tags for bottom line
+h5 {
+    color: white;
+    margin-left: 7%;
+}
+
+h6 {
+    color: white;
+    font-size: 14px;
+}

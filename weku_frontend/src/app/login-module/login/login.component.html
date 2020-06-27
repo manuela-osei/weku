@@ -1,0 +1,70 @@
+<!--********************************-->
+<!---------------MYCODE--------------->
+<!--********************************-->
+  <!-- login page -->
+  <ion-app>
+    <body>
+      <ion-content class="Whole">
+        <!--Grid to store rows and columns-->
+        <ion-grid class="loginGrid">
+          <ion-row>
+            <!--row1-->
+            <ion-col>
+              <!--col1-->
+
+              <!--LOGO- import img of logo-->
+              <ion-card-content class="logo">
+                <img src="assets/logo.png" alt="logo">
+              </ion-card-content>
+
+              <!--Form itself-->
+              <ion-card-content>
+
+                <!--Input Items-->
+                <ion-input class="form" [(ngModel)]="email" placeholder="email"></ion-input>
+                <ion-input class="form" [(ngModel)]="password" placeholder="password"></ion-input>
+
+                <!--Button-->
+                  <section class="loginBtn">
+                    <ion-fab>
+                      <ion-fab-button (click)="loginPress();" style="width:65px ; height:65px; font-weight: 10px;">
+                       login
+                      </ion-fab-button>
+                    </ion-fab>
+                  </section>
+              </ion-card-content>
+
+              <!--Below the form-->
+              <ion-row>
+                <!--create account-->
+                <ion-col class="createAccount">
+                  <ion-text (click)="createAccountPress();">
+                    <!--linked text-->
+                    <h6>create account</h6>
+                  </ion-text>
+                </ion-col>
+
+                <!--Separation Line -->
+                <ion-col size="0.1">
+                  <ion-text>
+                    <h5> | </h5>
+                  </ion-text>
+                </ion-col>
+
+                <!--forgot password-->
+                <ion-col class="forgotPassword">
+                  <ion-text (click)="forgotPasswordPress();">
+                    <h6>forgot password?</h6>
+                  </ion-text>
+                </ion-col>
+              </ion-row>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        <!--end grid-->
+      </ion-content>
+    </body>
+  </ion-app>
+  <!--********************************-->
+  <!--------------ENDMYCODE------------->
+  <!--********************************-->

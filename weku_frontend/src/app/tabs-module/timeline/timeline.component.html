@@ -1,0 +1,94 @@
+<!--********************************-->
+<!---------------MYCODE--------------->
+<!--********************************-->
+<body style="padding-top: 5%">
+  <ion-content class="Whole" [scrollEvents]="true" (ionScroll)="didScroll($event)" fullscreen={true}>
+
+    <!-- timeline -->
+    <div class="ion-padding">
+
+      <!-- ul to format a timeline Line  -->
+      <ul>
+        <!-- li for line formatting and to loop cards  -->
+        <ion-card class="li" *ngFor="let feed of feeds">
+          <span></span> <!-- span to format a timeline Line  -->
+
+          <!-- header -->
+          <ion-card-header>
+            <ion-avatar slot="start">
+              <img [src]="current_user.src">
+            </ion-avatar>
+            <ion-label>
+              <h2>{{current_user.username}}</h2>
+            </ion-label>
+          </ion-card-header>
+          <ion-card-content>
+            <!-- title -->
+            <ion-card-title>{{ feed.title }}</ion-card-title>
+
+            <!-- if image source - image -->
+            <div *ngIf="feed.src">
+              <img [src]="feed.src">
+            </div>
+
+            <!-- if video source - video -->
+            <div *ngIf="feed.vidSrc">
+              <video #player playsinline preload="auto">
+                <source [src]="feed.vidSrc" type="video/mp4">
+              </video>
+              <div class="bar">
+                <ion-button (click)="openFullscreen(player)" color="light" fill="clear">
+                  <ion-icon slot="icon-only" name="easel"></ion-icon>
+                </ion-button>
+                <ion-button (click)="playOnSide(player)" color="light" fill="clear">
+                  <ion-icon slot="icon-only" name="open"></ion-icon>
+                </ion-button>
+              </div>
+            </div>
+
+            <!-- caption or text  -->
+            {{ feed.description}}
+          </ion-card-content>
+
+          <div class="date" style=" margin-left: 70%;">
+            <ion-datetime id="dynamicDisabled" displayFormat="DD MM YY" disabled value="2020-12-15"></ion-datetime>
+          </div>
+        </ion-card>
+      </ul>
+    </div>
+
+    <!-- stickvid -->
+    <div class="sticky-video" #stickyplayer [hidden]="!stickyVideo">
+      <div class="sticky-controls" *ngIf="stickyVideo">
+        <ion-row class="ion-no-padding">
+          <ion-col size="4">
+            <ion-button size="small" (click)="closeSticky()" color="light" fill="clear">
+              <ion-icon slot="icon-only" name="close-circle-outline"> </ion-icon>
+            </ion-button>
+          </ion-col>
+          <ion-col size="4">
+            <ion-button size="small" (click)="playOrPauseSticky()" color="light" fill="clear">
+              <ion-icon slot="icon-only" [name]="stickyPlaying ? 'pause' : 'play'"> </ion-icon>
+            </ion-button>
+          </ion-col>
+          <ion-col size="4">
+            <ion-button size="small" (click)="openFullscreen(stickyVideo)" color="light" fill="clear">
+              <ion-icon slot="icon-only" name="easel"></ion-icon>
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </div>
+    </div>
+
+    <!-- Addfeed Button -->
+    <!-- fab placed to the top end -->
+    <ion-fab vertical="top" horizontal="end" slot="fixed">
+      <ion-fab-button style="width: 40px; height: 40px; fill: #BB3934;">
+        <ion-icon style=" fill: #ffffff;" (click)="pressAdd();" name="add"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+  </ion-content>
+</body>
+<!--********************************-->
+<!------------ENDMYCODE--------------->
+<!--********************************-->

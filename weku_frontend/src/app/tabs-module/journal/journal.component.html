@@ -1,0 +1,38 @@
+<!--********************************-->
+<!---------------MYCODE--------------->
+<!--********************************-->
+<ion-app>
+  <ion-header>
+    <ion-toolbar style="padding-top: 5%">
+      <ion-title>
+        Journal
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <!-- content -->
+  <ion-content>
+    <ion-card style=" text-align: center; padding: 5% 5% 5% 5%;">
+      <!-- Journal Add -->
+      <ion-item style="padding: 5% 5% 5% 5%;">
+        <ion-label style="padding-top: 3%" position="stacked">What's new?</ion-label>
+        <ion-textarea [(ngModel)]="journal"></ion-textarea>
+      </ion-item>
+      <!-- button to add -->
+      <ion-button (click)="addJournal()" style=" text-align: center;"> Add to Journal</ion-button>
+    </ion-card>
+
+    <!-- show your Journal -->
+    <ion-card style=" text-align: center; padding: 5% 5% 5% 5%;">
+      <ion-list *ngFor="let journal_list of journaling">
+        <ion-item>
+          {{journal_list}}
+        </ion-item>
+      </ion-list>
+    </ion-card>
+
+  </ion-content>
+</ion-app>
+<!--********************************-->
+<!------------ENDMYCODE--------------->
+<!--********************************-->
