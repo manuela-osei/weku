@@ -5,7 +5,7 @@ The application is being built with ionic and javaScript.
 
 RUN CODE:
 DOWNLOAD:
-WEKU FRONTEND FOLDER
+WEKU FRONTEND FOLDER &
 WEKU SERVER FOLDER
 RUN SERVER FIRST - "npm run start"
 THE RUN FRONTEND - "ionic start"
